@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+    <script src="https://kit.fontawesome.com/db2222aba3.js" crossorigin="anonymous"></script>
+    <style>
+        #showResult{
+            margin:27px;
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:25px;
+        }
+        #video>img{
+            width:100%;
+        }
+        #navbar{
+            padding: 5px;
+            margin-top: 10px;
+            background-color: rgb(36,36,36);
+            color: white;
+            font-size: 30px;
+            height:45px;
+        }
+       #btn{
+           font-size: 30px;
+       }
+       #YT,#video,#menu,#bell,#account{
+           margin-right: 40px;
+           
+       }
+       #mic{
+           margin:0px 300px 0px 20px;
+       }
+       #search{
+           margin:0px 0px 0px 100px;
+           width:450px;
+           font-size: 30px;
+           background-color:white;
+       }
+       .fa-brands{
+           color:red;
+       }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <i class="fa-solid fa-bars" id="YT"></i>
+        <label for=""><i class="fa-brands fa-youtube"></i> Youtube</label>
+        <input type="text"id="search"placeholder="Search">
+        <button id="btn"><i class="fa-solid fa-magnifying-glass" onclick="searchVideo()"></i></button>
+        <i class="fa-solid fa-microphone" id="mic"></i>
+      <i class="fa-solid fa-video" id="video"></i>
+      <i class="fa-solid fa-table-cells" id="menu"></i>
+      <i class="fa-solid fa-bell" id="bell"></i>
+      <i class="fa-solid fa-circle-user" id="account"></i>
+    </div>
+    <div id="showResult"></div>
+</body>
+</html>
+<script src="./index.js"></script>

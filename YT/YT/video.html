@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <style>
+        #play{
+            height:650px;
+        }
+        
+    </style>
+</head>
+<body>
+    <a href="./index.html">HOME</a>
+    <div id="play"></div>
+</body>
+</html>
+<script>
+   let get = JSON.parse(localStorage.getItem("VideoId"));
+   let playVideo= document.getElementById("play")
+   let iframe= document.createElement("iframe");
+   iframe.src=`https://www.youtube.com/embed/${get}`
+   iframe.allow="fullscreen"
+   iframe.width="100%"
+   iframe.height="100%"
+   playVideo.append(iframe)
+</script>
