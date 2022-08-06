@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    background-color: #121212;
+    width: 100%;
+    z-index: 100;
+    /* box-shadow: .1px .1px 5px .1px rgb(220, 220, 220); */
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    color: #fff;
+}
+
+nav ul li {
+    padding: 22px;
+    padding-left: 65px;
+}
+
+li a,
+li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+li a {
+    font-size: 25px;
+}
+
+
+/* slider */
+
+#slideshow {
+    padding-top: 72px;
+    position: relative;
+}
+
+#slideshow i {
+    color: red
+}
+
+#slideshow img {
+    width: 100%;
+    height: 400px;
+    object-fit: fill;
+    cursor: pointer;
+    animation: slide 1s infinite;
+}
+
+@keyframes slide {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#slideshow img:hover {
+    -webkit-animation-play-state: paused;
+    opacity: 1;
+}
+
+body {
+    background-color: #000000;
+}
+
+#movies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 82px;
+    padding: 32px;
+}
+
+#movies>div {
+    width: 350px;
+    color: #fff;
+    margin: auto;
+    background: #1a1a1a;
+    overflow: hidden;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+#movies>div img {
+    width: 100%;
+    height: 400px;
+    cursor: pointer;
+}
+
+#newhead {
+    color: Yellow;
+    padding-left: 12px;
+}
+
+.fa-star {
+    color: yellow;
+    padding-left: 5px;
+}
+
+.infosection {
+    background: #1a1a1a;
+    padding-left: 8px;
+    padding-top: 10px;
+    line-height: 2;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+
+/* sort */
+
+#sort-buttons {
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+    margin-top: 12px;
+}
+
+#sort-buttons button {
+    width: 83px;
+    box-sizing: border-box;
+    font-size: 17px;
+    background: #111;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    color: #fff;
+    border: .1px solid #fff;
+    text-transform: capitalize;
+}
